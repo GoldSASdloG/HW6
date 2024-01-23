@@ -5,17 +5,21 @@ public class Main {
         System.out.println("\t\t\t***Программа определения весов товаров***\n\n\n");
 
         System.out.println("Введите первый вес: ");
-        double first = new Scanner(System.in).nextDouble();
+        int first = new Scanner(System.in).nextInt();
 
         System.out.println("Введите второй вес: ");
-        double second = new Scanner(System.in).nextDouble();
+        int second = new Scanner(System.in).nextInt();
 
         System.out.println("Введите третий вес: ");
-        double third = new Scanner(System.in).nextDouble();
+        int third = new Scanner(System.in).nextInt();
 
-        double greatest = 0;
-        double average = 0;
-        double smallest = 0;
+
+        // Пример для посмотреть что изменилось
+        System.out.println("Изменение 44");
+
+        int greatest = 0;
+        int average = 0;
+        int smallest = 0;
 
         //todo дописать логику программы ниже.
 
@@ -26,6 +30,10 @@ public class Main {
         } else if (third > first && third > second){
             greatest = third;
         }
+
+
+        // Пример для посмотреть что изменилось
+        System.out.println("Изменение 55");
 
         if (first < second && first < third){
             smallest = first;
@@ -48,5 +56,11 @@ public class Main {
         System.out.println("Наибольший вес: " + greatest);
         System.out.println("Средний вес: " + average);
         System.out.println("Наименьший вес: " + smallest);
+
+        // Пример для посмотреть что изменилось
+
+        System.out.println("Изменение 11");
+        System.out.println("Изменение 22");
+        System.out.println("Изменение 33");
     }
 }
